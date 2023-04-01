@@ -16,6 +16,8 @@ Simple App to display customizable song information for the Spotify Desktop App 
  ```
  Example: ```▶ {title} - {artist} 『{progressMinutes}/{durationMinutes}』```
  
+ Note: When using progress and duration you probably want the **Only AppearOn Song Change** setting disabled
+ 
  ![image](https://user-images.githubusercontent.com/101527472/229314497-9de9d9b5-7c40-44e6-abe3-ed5798d24ea6.png)
 
  
