@@ -34,6 +34,7 @@
             this.materialSwitchChangeOnly = new MaterialSkin.Controls.MaterialSwitch();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.label1 = new System.Windows.Forms.Label();
+            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.SuspendLayout();
             // 
             // materialSwitchDisplaySong
@@ -112,11 +113,32 @@
             this.label1.Text = "- Spotify Not Connected -";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // materialButton1
+            // 
+            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton1.Depth = 0;
+            this.materialButton1.HighEmphasis = true;
+            this.materialButton1.Icon = null;
+            this.materialButton1.Location = new System.Drawing.Point(427, 72);
+            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton1.Name = "materialButton1";
+            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton1.Size = new System.Drawing.Size(65, 36);
+            this.materialButton1.TabIndex = 6;
+            this.materialButton1.Text = "Reset";
+            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton1.UseAccentColor = false;
+            this.materialButton1.UseVisualStyleBackColor = true;
+            this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
+            // 
             // VRCSongWiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(498, 266);
+            this.ClientSize = new System.Drawing.Size(498, 289);
+            this.Controls.Add(this.materialButton1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.materialSwitchChangeOnly);
@@ -127,6 +149,7 @@
             this.Name = "VRCSongWiz";
             this.Padding = new System.Windows.Forms.Padding(3, 48, 3, 2);
             this.Text = "VRC Song Wiz";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.VRCSongWiz_FormClosing);
             this.Load += new System.EventHandler(this.VRCSongWiz_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -139,5 +162,6 @@
         public MaterialSkin.Controls.MaterialSwitch materialSwitchDisplaySong;
         public MaterialSkin.Controls.MaterialSwitch materialSwitchChangeOnly;
         public Label label1;
+        private MaterialSkin.Controls.MaterialButton materialButton1;
     }
 }

@@ -8,5 +8,8 @@
     <Setting Name="SongChangeOnly" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="SongText" Type="System.String" Scope="User">
+      <Value Profile="(Default)">▶ {title} - {artist} 『{progressMinutes}/{durationMinutes}』</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

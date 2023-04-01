@@ -46,5 +46,17 @@ namespace TTSVoiceWizard3._0 {
                 this["SongChangeOnly"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("▶ {title} - {artist} 『{progressMinutes}/{durationMinutes}』")]
+        public string SongText {
+            get {
+                return ((string)(this["SongText"]));
+            }
+            set {
+                this["SongText"] = value;
+            }
+        }
     }
 }

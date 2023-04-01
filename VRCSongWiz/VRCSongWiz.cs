@@ -73,6 +73,7 @@ namespace TTSVoiceWizard3._0
             label1.ForeColor = Color.Red;
             materialSwitchDisplaySong.Checked = Settings1.Default.DisplaySong;
             materialSwitchChangeOnly.Checked = Settings1.Default.SongChangeOnly;
+            materialTextBox1.Text = Settings1.Default.SongText;
             WindowsMedia.getWindowsMedia();
             spotifyTimer = new System.Threading.Timer(spotifytimertick);
             spotifyTimer.Change(5000, 0);
@@ -90,6 +91,19 @@ namespace TTSVoiceWizard3._0
         {
             Settings1.Default.SongChangeOnly = materialSwitchChangeOnly.Checked;
             Settings1.Default.Save();
+        }
+
+        private void VRCSongWiz_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Settings1.Default.SongText = materialTextBox1.Text.ToString();
+            Settings1.Default.Save();
+            var messageSpeechBubble = new OscMessage("/chatbox/input", "", true, false);
+            OSCSender.Send(messageSpeechBubble);
+        }
+
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+            materialTextBox1.Text = "▶ {title} - {artist} 『{progressMinutes}/{durationMinutes}";
         }
     }
 }
