@@ -16,7 +16,10 @@ Simple App to display customizable song information for the Spotify Desktop App 
  ```
  Example: ```▶ {title} - {artist} 『{progressMinutes}/{durationMinutes}』```
  
- Note: When using progress and duration you probably want the **Only AppearOn Song Change** setting disabled
+ Notes: 
+ - When using progress and duration you probably want the **Only AppearOn Song Change** setting disabled
+ - You may have to pause and play the song if you start VRCSongWiz with Spotify already open. (or it will not connect right away)
+ - **If you want additional functiionaility download [TTS Voice Wizard](https://github.com/VRCWizard/TTS-Voice-Wizard) it containts all this apps features and more.**
  
  ![image](https://user-images.githubusercontent.com/101527472/229314497-9de9d9b5-7c40-44e6-abe3-ed5798d24ea6.png)
 
