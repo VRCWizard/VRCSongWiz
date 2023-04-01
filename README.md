@@ -1,5 +1,5 @@
 # VRCSongWiz
-Simple App to display customizable song information for the Spotify Desktop App in the VRChat Chatbox.
+Simple App to display customizable song information for the **Spotify Desktop App** in the VRChat Chatbox.
 
 
 1. It may ask you to install the missing framework for .Net upon running the .exe file
@@ -20,6 +20,9 @@ Simple App to display customizable song information for the Spotify Desktop App 
  - When using progress and duration you probably want the **Only AppearOn Song Change** setting disabled
  - You may have to pause and play the song if you start VRCSongWiz with Spotify already open. (or it will not connect right away)
  - **If you want additional functiionaility download [TTS Voice Wizard](https://github.com/VRCWizard/TTS-Voice-Wizard) it containts all this apps features and more.**
+     - TTS Voice Wizard has additional customization text variables
+     - TTS Voice Wizard Works with songs from other apps, and other media such as Youtube videos, and other browser media
+     - And much much more
  
  ![image](https://user-images.githubusercontent.com/101527472/229314497-9de9d9b5-7c40-44e6-abe3-ed5798d24ea6.png)
 
