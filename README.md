@@ -1,7 +1,7 @@
 # VRCSongWiz
 Simple App to display customizable song information for the **Spotify Desktop App** in the VRChat Chatbox.
 
-1. Download the app [here](https://github.com/VRCWizard/VRCSongWiz/releases/download/v1.0.0/VRCSongWiz-v1.0.0-x64.zip)
+1. Download the app [here](https://github.com/VRCWizard/VRCSongWiz/releases/download/v1.0.1/VRCSongWiz-v1.0.1-x64.zip)
     1. Extract it
     1. Run the .exe
 
