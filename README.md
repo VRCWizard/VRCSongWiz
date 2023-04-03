@@ -33,4 +33,10 @@ Simple App to display customizable song information for the **Spotify Desktop Ap
 
  
  ![image](https://user-images.githubusercontent.com/101527472/229314401-45c87536-f473-499b-9f8b-3afa15e616b8.png)
+ 
+ 
+ ## Need Help / Have Questions / Wanna make suggestions?
+-  Join the [Discord Server](https://discord.gg/YjgR9SWPnW) <br />
+  
+<a href="https://discord.gg/YjgR9SWPnW"><img src="https://discordapp.com/api/guilds/681732152517591048/widget.png?style=banner2" /></a>
 
