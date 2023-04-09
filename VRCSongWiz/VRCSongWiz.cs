@@ -103,7 +103,7 @@ namespace TTSVoiceWizard3._0
 
         private void materialButton1_Click(object sender, EventArgs e)
         {
-            materialTextBox1.Text = "▶ {title} - {artist} 『{progressMinutes}/{durationMinutes}";
+            materialTextBox1.Text = "▶ {title} - {artist} ";
         }
     }
 }

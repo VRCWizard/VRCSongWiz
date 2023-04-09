@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VRCSongWiz));
             this.materialSwitchDisplaySong = new MaterialSkin.Controls.MaterialSwitch();
-            this.materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
             this.materialSwitchChangeOnly = new MaterialSkin.Controls.MaterialSwitch();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox2();
             this.SuspendLayout();
             // 
             // materialSwitchDisplaySong
@@ -54,23 +54,6 @@
             this.materialSwitchDisplaySong.Text = "Display Song";
             this.materialSwitchDisplaySong.UseVisualStyleBackColor = true;
             this.materialSwitchDisplaySong.CheckedChanged += new System.EventHandler(this.materialSwitchDisplaySong_CheckedChanged);
-            // 
-            // materialTextBox1
-            // 
-            this.materialTextBox1.AnimateReadOnly = false;
-            this.materialTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox1.Depth = 0;
-            this.materialTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.materialTextBox1.LeadingIcon = null;
-            this.materialTextBox1.Location = new System.Drawing.Point(19, 186);
-            this.materialTextBox1.MaxLength = 50;
-            this.materialTextBox1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox1.Multiline = false;
-            this.materialTextBox1.Name = "materialTextBox1";
-            this.materialTextBox1.Size = new System.Drawing.Size(453, 50);
-            this.materialTextBox1.TabIndex = 2;
-            this.materialTextBox1.Text = "▶ {title} - {artist} 『{progressMinutes}/{durationMinutes}』";
-            this.materialTextBox1.TrailingIcon = null;
             // 
             // materialSwitchChangeOnly
             // 
@@ -133,16 +116,45 @@
             this.materialButton1.UseVisualStyleBackColor = true;
             this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
             // 
+            // materialTextBox1
+            // 
+            this.materialTextBox1.AnimateReadOnly = false;
+            this.materialTextBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.materialTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.materialTextBox1.Depth = 0;
+            this.materialTextBox1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox1.HideSelection = true;
+            this.materialTextBox1.LeadingIcon = null;
+            this.materialTextBox1.Location = new System.Drawing.Point(19, 194);
+            this.materialTextBox1.MaxLength = 32767;
+            this.materialTextBox1.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTextBox1.Name = "materialTextBox1";
+            this.materialTextBox1.PasswordChar = '\0';
+            this.materialTextBox1.PrefixSuffixText = null;
+            this.materialTextBox1.ReadOnly = false;
+            this.materialTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.materialTextBox1.SelectedText = "";
+            this.materialTextBox1.SelectionLength = 0;
+            this.materialTextBox1.SelectionStart = 0;
+            this.materialTextBox1.ShortcutsEnabled = true;
+            this.materialTextBox1.Size = new System.Drawing.Size(434, 48);
+            this.materialTextBox1.TabIndex = 7;
+            this.materialTextBox1.TabStop = false;
+            this.materialTextBox1.Text = "▶ {title} - {artist}";
+            this.materialTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.materialTextBox1.TrailingIcon = null;
+            this.materialTextBox1.UseSystemPasswordChar = false;
+            // 
             // VRCSongWiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(498, 289);
+            this.Controls.Add(this.materialTextBox1);
             this.Controls.Add(this.materialButton1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.materialSwitchChangeOnly);
-            this.Controls.Add(this.materialTextBox1);
             this.Controls.Add(this.materialSwitchDisplaySong);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -158,10 +170,10 @@
 
         #endregion
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        public MaterialSkin.Controls.MaterialTextBox materialTextBox1;
         public MaterialSkin.Controls.MaterialSwitch materialSwitchDisplaySong;
         public MaterialSkin.Controls.MaterialSwitch materialSwitchChangeOnly;
         public Label label1;
         private MaterialSkin.Controls.MaterialButton materialButton1;
+        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox1;
     }
 }

@@ -49,7 +49,7 @@ namespace TTSVoiceWizard3._0 {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("▶ {title} - {artist} 『{progressMinutes}/{durationMinutes}』")]
+        [global::System.Configuration.DefaultSettingValueAttribute("▶ {title} - {artist}")]
         public string SongText {
             get {
                 return ((string)(this["SongText"]));
